@@ -1,0 +1,29 @@
+USER DATA 
+
+| Username | Email                                     | Contact Number |
+| -------- | ----------------------------------------- | -------------- |
+| John123  | [john@email.com](mailto:john@email.com)   | 0712345678     |
+| Sarah22  | [sarah@email.com](mailto:sarah@email.com) | 0723456789     |
+
+ROLES 
+
+| Role ID | Role Name |
+| ------- | --------- |
+| 1       | Admin     |
+| 2       | Users     |
+| 3       | Logistics |
+
+PACKAGE PASSWORDS 
+
+| Package ID | Package Password |
+| ---------- | ---------------- |
+| 101        | pass123          |
+| 102        | secure456        |
+| 103        | logistics789     |
+
+USER  
+
+| User ID | Username |
+|---------|----------|
+| U001    | John123  |
+| U002    | Sarah22  |
