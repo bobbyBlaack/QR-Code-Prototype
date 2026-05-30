@@ -10,11 +10,11 @@ namespace QR_Code_Prototype.Models
         [Key]
         public int UserID { get; set; }
 
-        public string UserName { get; set; }
+        public string UserName { get; set; } = string.Empty;
 
-        public string Email { get; set; }
+        public string Email { get; set; } = string.Empty;
 
-        public string ContactNumber { get; set; }
+        public string ContactNumber { get; set; } = string.Empty;
 
     }
 }

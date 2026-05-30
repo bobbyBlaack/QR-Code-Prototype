@@ -11,7 +11,7 @@ namespace QR_Code_Prototype.Models
         [Key]
         public int PackageID { get; set; }
 
-        public string PackagePass { get; set; }
+        public string PackagePass { get; set; } = string.Empty;
 
 
     }

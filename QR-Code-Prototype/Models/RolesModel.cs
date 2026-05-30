@@ -11,7 +11,7 @@ namespace QR_Code_Prototype.Models
         [Key]
         public int RoleID { get; set; }
 
-        public string RoleName { get; set; }
+        public string RoleName { get; set; } = string.Empty;
 
 
     }

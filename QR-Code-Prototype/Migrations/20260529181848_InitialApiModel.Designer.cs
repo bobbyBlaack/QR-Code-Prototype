@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using QR_Code_Prototype.Data;
 
@@ -10,12 +11,14 @@ using QR_Code_Prototype.Data;
 namespace QR_Code_Prototype.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260529181848_InitialApiModel")]
+    partial class InitialApiModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "10.0.8");
+            modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
 
             modelBuilder.Entity("QR_Code_Prototype.Domain.Entities.AppUser", b =>
                 {
@@ -154,59 +157,6 @@ namespace QR_Code_Prototype.Migrations
                     b.HasIndex("QrCodeRecordId");
 
                     b.ToTable("QrScanEvents");
-                });
-
-            modelBuilder.Entity("QR_Code_Prototype.Models.PackagePassModel", b =>
-                {
-                    b.Property<int>("PackageID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("PackagePass")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("PackageID");
-
-                    b.ToTable("PackagePass");
-                });
-
-            modelBuilder.Entity("QR_Code_Prototype.Models.RolesModel", b =>
-                {
-                    b.Property<int>("RoleID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("RoleName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("RoleID");
-
-                    b.ToTable("Roles");
-                });
-
-            modelBuilder.Entity("QR_Code_Prototype.Models.UserModel", b =>
-                {
-                    b.Property<int>("UserID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("ContactNumber")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("UserID");
-
-                    b.ToTable("User");
                 });
 
             modelBuilder.Entity("QR_Code_Prototype.Domain.Entities.QrCodeRecord", b =>
