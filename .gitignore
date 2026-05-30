@@ -1,0 +1,25 @@
+# Visual Studio / IDE state
+.vs/
+.vscode/
+
+# Build output
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Local SQLite runtime databases
+*.db
+*.db-shm
+*.db-wal
+
+# Test output
+TestResults/
+coverage/
+*.trx
+*.coverage
+*.coveragexml
+
+# User-specific project files
+*.user
+*.suo
