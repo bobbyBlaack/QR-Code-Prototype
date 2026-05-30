@@ -23,10 +23,10 @@ Current limitations:
 Run locally:
 
 ```bash
-dotnet restore "QR-Code Prototype/QR-Code Prototype.csproj"
-dotnet build "QR-Code Prototype/QR-Code Prototype.csproj"
-dotnet ef database update --project "QR-Code Prototype/QR-Code Prototype.csproj"
-dotnet run --project "QR-Code Prototype/QR-Code Prototype.csproj"
+dotnet restore "QR-Code-Prototype/QR-Code-Prototype.csproj"
+dotnet build "QR-Code-Prototype/QR-Code-Prototype.csproj"
+dotnet ef database update --project "QR-Code-Prototype/QR-Code-Prototype.csproj"
+dotnet run --project "QR-Code-Prototype/QR-Code-Prototype.csproj"
 ```
 
 Open `/swagger` and execute this manual flow:

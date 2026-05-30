@@ -57,7 +57,7 @@ Domain:
 ## 3. Folder Structure
 
 ```text
-QR-Code Prototype/
+QR-Code-Prototype/
   Contracts/
     Auth/
     Common/

@@ -11,14 +11,14 @@ This Repo is designed for us to collab and make the QR code prototype for JOI
 
 ### How to run locally
 ```bash
-dotnet restore "QR-Code Prototype/QR-Code Prototype.csproj"
-dotnet run --project "QR-Code Prototype/QR-Code Prototype.csproj"
+dotnet restore "QR-Code-Prototype/QR-Code-Prototype.csproj"
+dotnet run --project "QR-Code-Prototype/QR-Code-Prototype.csproj"
 ```
 
 ### How to run migrations
 ```bash
-dotnet ef migrations add InitialApiModel --project "QR-Code Prototype/QR-Code Prototype.csproj"
-dotnet ef database update --project "QR-Code Prototype/QR-Code Prototype.csproj"
+dotnet ef migrations add InitialApiModel --project "QR-Code-Prototype/QR-Code-Prototype.csproj"
+dotnet ef database update --project "QR-Code-Prototype/QR-Code-Prototype.csproj"
 ```
 
 ### Swagger URL
